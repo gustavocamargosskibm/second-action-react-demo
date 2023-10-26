@@ -7,8 +7,8 @@ jobs:
     - name: Get code
       uses: action/checkout@v4
     - name: Get code
-      uses: actions/seup-node@v3
-      with:
+      uses: actions/setup-node@v3
+        with:
     node-version: 18
     
     -name: Install dependencies

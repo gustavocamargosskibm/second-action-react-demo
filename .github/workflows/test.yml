@@ -1,0 +1,19 @@
+name: test Project
+on: push
+jobs:
+ test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Get code
+      uses: action/checkout@v4
+    - name: Get code
+      uses: actions/seup-node@v3
+      with:
+    node-version: 18
+    
+    -name: Install dependencies
+    run: npm ci
+    - name: run tests
+    run: npm test 
+      
+        
